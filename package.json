@@ -6,7 +6,8 @@
   "scripts": {
     "start": "lite-server",
     "dev": "webpack-dev-server",
-    "build": "webpack --config webpack.config.prod.js"
+    "build": "webpack --config webpack.config.prod.js",
+    "tsc:build": "tsc -w"
   },
   "keywords": [
     "typescript"
