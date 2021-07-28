@@ -4,11 +4,10 @@
   "description": "Drag and Drop",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "lite-server",
     "dev": "webpack-dev-server",
     "build": "webpack --config webpack.config.prod.js",
-    "tsc:build": "tsc -w",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm run build"
+    "tsc:build": "tsc -w"
   },
   "keywords": [
     "typescript"
@@ -23,9 +22,6 @@
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.9.0"
-  },
-  "dependencies": {
-    "express": "^4.17.1"
   },
   "engines": {
     "node": ">=14.17.0"
