@@ -2,13 +2,13 @@
   "name": "Drag and Dropt",
   "version": "1.0.0",
   "description": "Drag and Drop",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
-    "start": "lite-server",
+    "start": "node server.js",
     "dev": "webpack-dev-server",
     "build": "webpack --config webpack.config.prod.js",
     "tsc:build": "tsc -w",
-    "prebuild": "npm run build"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm run build"
   },
   "keywords": [
     "typescript"
@@ -23,5 +23,11 @@
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.9.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "engines": {
+    "node": ">=14.17.0"
   }
 }
